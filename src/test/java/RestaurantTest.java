@@ -37,7 +37,7 @@ class RestaurantTest {
 
     @Test
     public void calculate_order_value_for_multiple_items() {
-        int orderValue = orderService.calculateOrderValue(restaurant, "Sweet corn soup", "");
+        int orderValue = orderService.calculateOrderValue(restaurant, "Sweet corn soup", "Vegetable lasagne");
         assertEquals(388, orderValue);
     }
 
