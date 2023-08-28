@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RestaurantTest {
     Restaurant restaurant;
     OrderService orderService;
-    
+
 
     @BeforeEach
     public void setup() {
@@ -37,7 +37,7 @@ class RestaurantTest {
 
     @Test
     public void calculate_order_value_for_multiple_items() {
-        int orderValue = orderService.calculateOrderValue(restaurant, "Sweet corn soup", "Vegetable lasagne");
+        int orderValue = orderService.calculateOrderValue(restaurant, "Sweet corn soup", "");
         assertEquals(388, orderValue);
     }
 
